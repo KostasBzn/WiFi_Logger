@@ -7,7 +7,7 @@ A simple Windows tool written in C#, that scans Wi-Fi networks and saves the res
 - Scans Wi-Fi networks using Windows `netsh` command.  
 - Saves results (or errors) into `wifi_scan.txt`.  
 
-### Installation & Deployment
+### Requirements
 
 [.Net Framework](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48) v4.8 is required to run.
 
