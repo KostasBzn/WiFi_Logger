@@ -79,7 +79,7 @@ namespace WiFi_Logger
             catch (Exception ex) 
             {
                 Debug.WriteLine("Net_Scan failed: " + ex.Message);
-                string er = "--- ERROR Net_Scan  ---\n" + ex.Message + "\n";
+                string er = "--- ERROR Net_Scan  ---\n" + ex.Message;
                 SaveToFile(er);
             }
 
