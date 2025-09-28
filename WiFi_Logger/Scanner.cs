@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -33,7 +34,7 @@ namespace WiFi_Logger
                 };
                 proc.Start();
                 string output = proc.StandardOutput.ReadToEnd();
-                Debug.WriteLine("scan result " + output);
+                Debug.WriteLine("scan result \n" + output);
                 proc.WaitForExit();
 
             }
@@ -46,7 +47,12 @@ namespace WiFi_Logger
 
         private void SaveToFile(string output)
         {
+            string filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "wifi_scan.txt");
 
+            using (StreamWriter sw = new StreamWriter(filePath, false, Encoding.UTF8))
+            {
+                sw.WriteLine(output);
+            }
         }
     }
 }
