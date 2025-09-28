@@ -11,6 +11,16 @@ namespace WiFi_Logger
     {
         static void Main(string[] args)
         {
+            try
+            {
+                var sc = new Scanner();
+                sc.Start();
+            }
+            catch (Exception ex) 
+            {
+                Debug.WriteLine("Error starting the app: " + ex);
+            }
+            
         }
     }
 }
