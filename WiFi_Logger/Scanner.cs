@@ -46,7 +46,7 @@ namespace WiFi_Logger
 
             catch (Exception ex) 
             {
-                string er = "--- ERROR  ---\n" + ex.Message + "\n";
+                string er = "--- ERROR  ---\n" + ex.Message;
                 SaveToFile(er);
             }
             
