@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{D50EA1E6-9578-4DBE-81A1-C9480CFE1651}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>WiFi_Logger</RootNamespace>
-    <AssemblyName>WiFi_Logger</AssemblyName>
+    <RootNamespace>WiFiLogger</RootNamespace>
+    <AssemblyName>WiFiLogger</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
