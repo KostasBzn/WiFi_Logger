@@ -34,13 +34,16 @@ namespace WiFi_Logger
                 };
                 proc.Start();
                 string output = proc.StandardOutput.ReadToEnd();
-                Debug.WriteLine("scan result \n" + output);
                 proc.WaitForExit();
+                Debug.WriteLine("scan result \n" + output); 
+                SaveToFile(output);
 
             }
             catch (Exception ex) 
             {
                 Debug.WriteLine("Net_Scan failed: " + ex.Message);
+                string er = "--- ERROR Net_Scan  ---\n" + ex.Message + "\n";
+                SaveToFile(er);
             }
 
         }
